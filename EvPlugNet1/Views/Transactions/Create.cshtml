@@ -1,0 +1,82 @@
+﻿@model EvPlugNet1.Models.Transaction
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Uid" class="control-label"></label>
+                <input asp-for="Uid" class="form-control" />
+                <span asp-validation-for="Uid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChargePointId" class="control-label"></label>
+                <select asp-for="ChargePointId" class ="form-control" asp-items="ViewBag.ChargePointId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConnectorId" class="control-label"></label>
+                <input asp-for="ConnectorId" class="form-control" />
+                <span asp-validation-for="ConnectorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartTagId" class="control-label"></label>
+                <input asp-for="StartTagId" class="form-control" />
+                <span asp-validation-for="StartTagId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartTime" class="control-label"></label>
+                <input asp-for="StartTime" class="form-control" />
+                <span asp-validation-for="StartTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MeterStart" class="control-label"></label>
+                <input asp-for="MeterStart" class="form-control" />
+                <span asp-validation-for="MeterStart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartResult" class="control-label"></label>
+                <input asp-for="StartResult" class="form-control" />
+                <span asp-validation-for="StartResult" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StopTagId" class="control-label"></label>
+                <input asp-for="StopTagId" class="form-control" />
+                <span asp-validation-for="StopTagId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StopTime" class="control-label"></label>
+                <input asp-for="StopTime" class="form-control" />
+                <span asp-validation-for="StopTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MeterStop" class="control-label"></label>
+                <input asp-for="MeterStop" class="form-control" />
+                <span asp-validation-for="MeterStop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StopReason" class="control-label"></label>
+                <input asp-for="StopReason" class="form-control" />
+                <span asp-validation-for="StopReason" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

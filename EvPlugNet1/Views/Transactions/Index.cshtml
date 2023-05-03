@@ -1,0 +1,108 @@
+﻿@model IEnumerable<EvPlugNet1.Models.Transaction>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script>
+    $(document).ready(function () {
+        $('#transTable').DataTable();
+    });
+</script>
+
+
+
+
+<div style="padding:25px;">
+    <h4>Transactions</h4>
+   
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table id="transTable" style="font-size:.7em;border 1px solid #dddddd" class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Uid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ConnectorId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartTagId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MeterStart)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartResult)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StopTagId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StopTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MeterStop)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StopReason)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ChargePoint)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Uid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ConnectorId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartTagId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MeterStart)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartResult)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StopTagId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StopTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MeterStop)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StopReason)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChargePoint.ChargePointId)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.TransactionId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.TransactionId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.TransactionId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

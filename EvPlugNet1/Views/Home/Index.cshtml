@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="~/js/doughnutpie.js"></script>
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+        var myCanvas = document.getElementById("myCanvasTag");
+
+        var ctx = myCanvas.getContext("2d");
+
+        myCanvas.width = 360;
+        myCanvas.height = 340;
+
+        var myPiechart = new PieChart({
+            canvas: myCanvas,
+            seriesName: "Chargers",
+            doughnutText1: "11",
+            doughnutText2: "Total Chargers",
+            doughnutHoleSize: 0.4,
+            padding: 50,
+            data: {
+                "In Use": 16,
+                "Available": 32,
+                "Occupied / Idle": 12,
+                "Offline / Fault": 18
+            },
+            colors: ["#80DEEA", "#FFE082", "#FFAB91", "#CE93D8"],
+            titleOptions: {
+                align: "center",
+                fill: "black",
+                font: {
+                    weight: "bold",
+                    size: "15px"
+
+                }
+            }
+        });
+
+        myPiechart.draw();
+
+    });
+
+
+
+</script>
+
+<style type="text/css">
+
+
+    ul {
+        /*padding-top: 20px;*/
+        display: flex;
+        /*gap: 2rem;*/
+    }
+
+    li {
+        margin: 0.5rem 0;
+    }
+
+    .legend {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 1vw;
+        font-weight: 600;
+        color: #808080;
+    }
+
+    /*div {
+                margin: 0 auto;
+                width: 500px;
+            }
+        */
+    .flex-container {
+        display: flex;
+        background-color: #67A8D2;
+    }
+
+        .flex-container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+        }
+
+</style>
+
+<div style="clear:both;" class="text-center">
+    <div class="dashTitle">
+        EV Charging Dashboard for : 1512 Yew St.
+    </div>
+
+    <div class="mpLine"></div>
+
+</div>
+<div class="flex-container">
+
+    <div style="width:50vw;border-radius: 25px;min-width:400px;max-width:400px;">
+
+
+        <div>
+            <canvas id="myCanvasTag" class="myCanvas" style="background: white;"></canvas>
+            <legend id="mCl" for="myCanvas"></legend>
+
+
+
+        </div>
+
+    </div>
+    <div style="width:50vw;border-radius: 25px;">
+        <div style="margin-bottom:25px;font-weight:bold;font-size:20px;">Load</div>
+        <div>
+            <div style="float:left;font-size:70px;">73.59</div>
+            <div style="float:left;margin-left:15px;padding-top:15px;font-size:20px;">
+                <div style="font-weight:bold;">kW</div>
+                <div style="font-size:11px;color:#939193">Current<br /> load</div>
+            </div>
+
+        </div>
+        <div style="clear:both;padding-top:30px;">
+
+            <div style="font-size:30px;font-weight:600;">
+                53.95%
+            </div>
+            <div style="border:1px #939193 solid;border-radius: 10px;background-color:#FFFEFF">
+                <div style="border-radius: 10px;background-color:#14F19E;height:24px;width:50%"></div>
+            </div>
+            <div style="font-size:11px;color:#939193">
+               of Total Capacity
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+

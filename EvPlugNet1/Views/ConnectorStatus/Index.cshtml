@@ -1,0 +1,95 @@
+﻿@model IEnumerable<EvPlugNet1.Models.ConnectorStatus>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script>
+    $(document).ready(function () {
+        $('#conTable').DataTable();
+    });
+</script>
+
+<style>
+
+    thead {
+        padding: 7px;
+    }
+
+    table {
+        font-size: .7em;
+        border: 1px solid #dddddd;
+    }
+
+</style>
+
+<div style="padding:25px;">
+
+    <h3>Connector Status</h3>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+
+    <table id="conTable" class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ChargePointId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ConnectorId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ConnectorName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastStatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastStatusTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastMeter)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastMeterTime)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChargePointId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ConnectorId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ConnectorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastStatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastStatusTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastMeter)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastMeterTime)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

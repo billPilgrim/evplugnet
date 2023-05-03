@@ -1,0 +1,42 @@
+﻿@model EvPlugNet1.Models.ChargeTag
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ChargeTag</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TagName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TagName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParentTagId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParentTagId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ExpiryDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Blocked)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Blocked)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.TagId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

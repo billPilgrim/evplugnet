@@ -1,0 +1,549 @@
+html {
+    font-size: 14px;
+}
+
+
+thead {
+    padding: 7px;
+}
+
+table {
+    font-size: .7em;
+    border: 1px solid #dddddd;
+}
+
+.mpLine {
+    height: 8px;
+    background-color: #67A8D2;
+}
+.dashTitle {
+    margin-top: 13px;
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 8px;
+
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+.main {
+    width:100%;
+}
+
+body {
+    /*margin-bottom: 60px;*/
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    /*padding-bottom: 20px;*/
+    font-family: 'inter-variablefont_slnt,wght';
+}
+
+.footer, .footer a, .footer a:link:active, .footer a:visited:active {
+    color: #9D9D9D;
+    padding: 8px;
+    font-size: 1vw;
+}
+
+.navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.nav-bg {
+    
+    background-image: url("../images/bgcolor.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-weight: 500;
+}
+
+.topDiv {
+    margin-top: 70px;
+    margin-left:50px;
+}
+
+/* from other app  */
+body {
+}
+
+@font-face {
+    font-family: 'intertight-variablefont_wght';
+    src: url('../fonts/intertight-variablefont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-variablefont_slnt,wght';
+    src: url('../fonts/inter-variablefont_slnt,wght.ttf') format('truetype');
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+basicMargin {
+    margin: 15px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+.erescue {
+    max-width:   40vw;
+    vertical-align:central !important;
+}
+
+.cta {
+    flex: .4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-button {
+    text-align: center;
+    /*    padding: 40px;
+*/ border: 2px solid #EE2348;
+    color: #EE2348;
+    padding: 10%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+.bgImage {
+    background-image: url('../../images/landing-bg.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /*background-size: cover;  Resize the background image to cover the entire container */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;*/
+}
+
+
+
+.navbar, .navbar-inverse {
+    color: white !important;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+.navbar-nav > ul {
+    margin: 30px;
+}
+
+.redLine {
+    padding: 0px;
+    border-top: 0px;
+    margin: 0px;
+    height: 9px !important;
+    width: 100%;
+    opacity: 1;
+    background-color: #EE2348;
+    color: #EE2348
+}
+
+
+.container {
+    padding: 0px;
+    margin: 0px;
+    max-width: 2000px;
+
+}
+
+.aboveTheFoldText {
+    margin-top: 50px;
+    padding-top: 150px;
+    height: 580px;
+}
+
+.mainPageLg, .mainPageSm {
+    text-align: center;
+    color: white;
+    text-shadow: 2pt 2pt 4pt #191919;
+    font-style: italic;
+}
+
+.mainPageLg {
+    font-weight: 900;
+    font-size: 8vw;
+}
+
+
+.mainPageSm {
+    font-size: 25px;
+    /*line-height: 20px !important;*/
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+
+.underTheFoldFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 50%;
+    flex-flow: row;
+}
+
+.underTheFoldLeft {
+    flex: 1;
+}
+
+.underTheFoldText {
+    padding: 40px;
+    min-width: 200px;
+}
+
+.underFoldLg {
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.underFoldSm {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.solutionTx {
+    font-size: 20px;
+    /*font-weight: bold;*/
+    line-height: 25px;
+}
+
+
+.multiLg {
+    font-size: 22px;
+    font-weight: bold;
+    /*line-height: 26px;*/
+}
+
+.multiSm {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 2%;
+}
+
+
+.bgTesla {
+    background-image: url('../../images/teslaNew.png');
+     
+    background-position-x:right;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    flex: 1;
+    min-height: 50vh;
+    /*max-height: 50vh;*/
+    /*float: left;*/
+    /*width: 50%;*/
+    /*height: 100%*/;
+    /*background-size: cover;  Resize the background image to cover the entire container */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;*/
+}
+
+.dwellings {
+    flex: .6;
+    /* min-height: 50vh;*/
+    margin: 30px;
+}
+
+.dwellingsText {
+    flex: .4;
+    min-height: 50vh;
+    margin: 30px;
+}
+
+
+.redBand {
+    /*background-color: #EE2348;*/
+    color: #EE2348;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+     border-left: solid 5px;
+    border-color: #EE2348;
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    border-right: solid 5px;
+    margin-left:1vh;
+    margin-right:1vh;
+}
+
+.blueBand {
+    background-color: #67A8D2;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.hrRed {
+    padding: 0px;
+    border-top: 0px;
+    margin: 0px;
+    height: 9px !important;
+    width: 100%;
+    opacity: 1;
+    background-color: #EE2348;
+    color: #E5E5E5
+}
+
+
+.logistics {
+    flex: .6;
+    /* min-height: 50vh;*/
+    margin: 30px;
+}
+
+.solution {
+    flex: .4;
+    min-height: 50vh;
+    margin: 30px;
+}
+
+.solutionRt {
+    flex: .5;
+    /*border-left: solid 5px;*/
+    border-color: #EE2348;
+    /*padding-left: 6vh;
+    padding-right: 2vh*/
+}
+
+.renewableChart {
+    flex: .4;
+    /*min-height: 50vh;*/
+    margin: 30px;
+    text-align: center;
+    font-size:12px
+}
+
+.challenge {
+    flex: .5;
+    min-height: 15vh;
+    
+    margin: 30px;
+}
+
+.solutionPng {
+    flex: .5;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.solutionText {
+}
+
+.contactLabel {
+    flex: .5;
+    padding: 6px;
+    text-align: left;
+    color: white
+}
+
+.formBg {
+    margin: 70px;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #EE2348;
+    border-radius: 15px;
+    box-shadow: 0 0 9px 9px #aaaaaa;
+    /*box-shadow: 10px 10px #d0d0d0 ;*/
+    /*width: 100vh;*/
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    max-width: 50vh;
+}
+
+.formBgAbout {
+    /*margin: 70px;*/
+    margin-top: 70px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    /*box-shadow: 0 0 9px 9px #aaaaaa;*/
+    /*box-shadow: 10px 10px #d0d0d0 ;*/
+    width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    opacity: 0.7;
+    outline: 1px solid black;
+    /*-webkit-text-stroke: 1px black;*/
+    /*text-shadow: 1px 0 0 black,0 1px 0 black,-1px 0 0 black,0 -1px 0 black;*/
+}
+
+.heavyText {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.contactInput {
+    flex: .5;
+}
+
+    .contactInput input, select, textarea {
+        width: 240px;
+    }
+
+
+.headshot {
+    
+    width:20vh;
+}
+.hphoto {
+    max-width: 150px;
+    max-height: 180px;
+    width: 150px;
+    /*max-height: 180px;*/
+}
+
+.bio {
+    padding: 20px;
+    background-color: #ed6544;
+    margin: 20px;
+    box-shadow: 4px 4px #808080;
+    color: white;
+    width: 45vh;
+    height: 375px;
+    font-size:1.4vw;
+}
+
+.ptpb{
+    padding-top:3vh;
+    padding-bottom:3vh;
+    padding-left:3vh;
+    padding-right:2vh
+}
+/***********************    Media Queries   ********************/
+/* laptop */
+@media only screen and (min-width: 769px) {
+    .mainPageLg {
+        font-size: 4.7vw;
+    }
+    .bgTesla{
+        min-height: 30vw;
+    }
+    .mainPageSm {
+        font-size: 1.6vw;
+    }
+    .challenge {
+        padding-left: 20vh;
+        padding-top: 8vh;
+    }
+    .underTheFoldText {
+        min-height: 40vw;
+    }
+
+    .underTheFoldFlex {
+        flex-flow: row;
+    }
+}
+
+
+
+/*phones large*/
+@media only screen and (max-width: 768px) {
+
+
+    .underTheFoldFlex {
+        flex-flow: column;
+    }
+
+    .mainPageLg {
+        font-size: 8vw;
+        /*height:38px*/
+    }
+
+    .mainPageSm {
+        font-size: 4vw;
+        /*height:20px;*/
+    }
+
+    .formBgAbout, .formBg {
+        width: 65vh;
+    }
+
+    .erescue {
+        max-width:43vh;
+        
+    }
+
+    .bgTesla {
+        min-height: 60vh;
+    }
+   
+    
+}
+
+
+/*phones small*/
+@media only screen and (max-width: 440px) {
+
+    .mainPageLg {
+        font-size: 8vw;
+        /*height: 38px*/
+    }
+
+    .mainPageSm {
+        font-size: 4vw;
+    }
+
+    .formBgAbout, .formBg {
+        width: 40vh;
+    }
+
+    
+}

@@ -1,0 +1,121 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "OCPP.CoreContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "EvPlugNet1",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[AspNetRoleClaims]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserClaims]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserLogins]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUsers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserTokens]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ChargePoint]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ChargePointNode]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ChargeTags]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ConnectorStatus]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MessageLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Node]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Node2node]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NodeType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Role]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Transactions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserCharger]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserNode]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ConnectorStatusView]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[nodes2chargers]",
+         "ObjectType": 3
+      }
+   ],
+   "UiHint": "globalxpres.OCPP.Core.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

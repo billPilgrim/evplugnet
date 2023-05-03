@@ -1,0 +1,55 @@
+﻿@model EvPlugNet1.Models.ConnectorStatus
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ConnectorStatus</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ChargePointId" />
+            <input type="hidden" asp-for="ConnectorId" />
+            <div class="form-group">
+                <label asp-for="ConnectorName" class="control-label"></label>
+                <input asp-for="ConnectorName" class="form-control" />
+                <span asp-validation-for="ConnectorName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastStatus" class="control-label"></label>
+                <input asp-for="LastStatus" class="form-control" />
+                <span asp-validation-for="LastStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastStatusTime" class="control-label"></label>
+                <input asp-for="LastStatusTime" class="form-control" />
+                <span asp-validation-for="LastStatusTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastMeter" class="control-label"></label>
+                <input asp-for="LastMeter" class="form-control" />
+                <span asp-validation-for="LastMeter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastMeterTime" class="control-label"></label>
+                <input asp-for="LastMeterTime" class="form-control" />
+                <span asp-validation-for="LastMeterTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

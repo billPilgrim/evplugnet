@@ -1,0 +1,38 @@
+﻿
+<nav style="opacity:0.8" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark @*bg-white*@ @*border-bottom*@ box-shadow mb-3">
+    <div @*style="background-color:#808080;"*@ class="container-fluid nav-bg">
+
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img style="height:20px;" src="~/images/plugability-logo-2-white.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul style="margin-top:0px;padding-top:0px;font-size:.8em;" class="navbar-nav flex-grow-1">
+
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="ConnectorStatus" asp-action="index">Charger Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Transactions" asp-action="index">Transactions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="ChargePoints" asp-action="index">Charge Point</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="ChargeTags" asp-action="index">Charge Tags</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="ChargerManagement" asp-action="index">Charger Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Setup" asp-action="index">Setup</a>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+    </div>
+</nav>

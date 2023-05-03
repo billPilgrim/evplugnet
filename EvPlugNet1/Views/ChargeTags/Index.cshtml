@@ -1,0 +1,62 @@
+﻿@model IEnumerable<EvPlugNet1.Models.ChargeTag>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<script>
+    $(document).ready(function () {
+        $('#transTable').DataTable();
+    });
+</script>
+
+
+
+
+<div style="padding:25px;">
+    <h4>Charge Tags</h4>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+    <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TagName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParentTagId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blocked)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TagName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParentTagId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpiryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Blocked)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TagId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TagId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TagId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
