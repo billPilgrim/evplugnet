@@ -21,7 +21,7 @@ namespace EvPlugNet1.Controllers
         // GET: Transactions
         public async Task<IActionResult> Index()
         {
-            var oCPPCoreContext = _context.Transactions.Include(t => t.ChargePoint);
+            var oCPPCoreContext = _context.Transactions.Include(t => t.ChargePoint).OrderByDescending(a=>a.TransactionId);
             return View(await oCPPCoreContext.ToListAsync());
         }
 
